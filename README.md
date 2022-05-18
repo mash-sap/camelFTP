@@ -6,12 +6,11 @@ If the last processor of a route sets a out message, the post processing is not 
 Execute Test: SftpPollEnrichConsumeWithDisconnectAndDeleteIT
 
 The test should move the file "hello.txt" after processing from
-target\ftp\SftpPollEnrichConsumeWithDisconnectAndDeleteIT\res\home
-to
-target\ftp\SftpPollEnrichConsumeWithDisconnectAndDeleteIT\res\home\archive
+<br>target\ftp\SftpPollEnrichConsumeWithDisconnectAndDeleteIT\res\home
+<br>to
+<br>target\ftp\SftpPollEnrichConsumeWithDisconnectAndDeleteIT\res\home\archive
 
-Change in the test setOutMessage to true (L:71) in order to set a out message in the last processor
-Delete the previously created files and folders in target\ftp\SftpPollEnrichConsumeWithDisconnectAndDeleteIT\res\home
+Change in the test setOutMessage to true (L:71) in order to set a out message in the last processor. Delete the previously created files and folders in target\ftp\SftpPollEnrichConsumeWithDisconnectAndDeleteIT\res\home
 
 Rerun the test: The test fails now and because the post processing was not executed
 
